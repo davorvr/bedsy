@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bedsy"
+version = "0.1rc1"
+authors = [
+  { name="Davor Virag", email="davor.virag@gmail.com" },
+]
+description = "The BeDSy is a platform for hardware triggering and synchronisation of equipment for laboratory animal behavioural monitoring."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "pyserial >= 3.5"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/davorvr/bedsy"
+"Bug Tracker" = "https://github.com/davorvr/bedsy/issues"
