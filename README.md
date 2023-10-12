@@ -36,4 +36,7 @@ The [BeDsyino](https://github.com/davorvr/bedsyino) is, however, still cooking. 
 
 The module provides communication with [BeDsyino](https://github.com/davorvr/bedsyino), but requires the user to handle start/stop messages (i.e. it won't raise an exception if it doesn't receive a stop message after calling the `stop_bedsy()` method).
 
+#### License
+
+The code is distributed under GPLv3.
 *TO DO - expand*
