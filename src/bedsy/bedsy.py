@@ -16,7 +16,7 @@ class Bedsy(threading.Thread):
 
     def _get_comport(self, id_strings: list) -> str:
         devices = [tuple(p) for p in list(serial.tools.list_ports.comports())]
-        ports_filtered = [d[0] for d in devices if any(ids in d[2] for ids in id_strings)]
+        ports_filtered = [d[0] for d in devices if all(ids in d[2] for ids in id_strings)]
         if not ports_filtered:
             raise IOError("BeDSy not found!")
         if len(ports_filtered) != 1:
